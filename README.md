@@ -42,7 +42,7 @@ An emotion classification project which takes image files captured from human fa
    
    Pixels contains 2304 pixels (48x48) each row.
    
-   Usage is determined as Training(80%) / PublicTest(10%) / PrivateTest(10%)
+   Usage is determined as Training(80%) / PublicTest(10%) / PrivateTest(10%).
    
    This dataset was first developed to make a comparison to [ROHIT VERMA - FER2013].</p>
 
@@ -69,7 +69,7 @@ An emotion classification project which takes image files captured from human fa
 ## UI
 
 <p align="center">
-   <img src="static/images/landmarks.png"
+   <img src="static\images\UI.png"
       alt="User Interface Design illustration" width="1600" height="500"/>
 </p>
 
