@@ -1,0 +1,51 @@
+Instructions to setup your virtual environment using pyenv on macOS:
+
+1. Install Homebrew:
+    Documentation found at: https://brew.sh/
+
+2. Install pyenv:
+    xcode-select --install
+    brew install openssl readline sqlite3 xz zlib
+    brew update
+    brew install pyenv
+
+3. Add the pyenv to your $PATH (if you are not using zsh as a shell, you have to change ~/.zshrc accordingly):
+    echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
+
+4. Install Python Version 3.10.9:
+    pyenv install 3.10.9
+
+5. Clone this repository:
+    git clone https://github.com/GeorgiosIoannouCoder/fervi.git
+
+6. Navigate to the cloned repository folder:
+    cd fervi
+
+7. Use the installed Python version in the cloned repository folder:
+    pyenv local 3.10.9
+
+8. Create virtual environment in the cloned repository folder:
+    python -m venv .fervi-venv
+
+9. Activate the virtual environment:
+    source .fervi-venv/bin/activate
+
+10. Install the dependencies listed in the requirements.txt file:
+    pip install -r requirements.txt
+
+11. Install ipykernel:
+    pip install ipykernel
+
+12. Install Jupyter Notebook:
+    pip install jupyter notebook
+
+13. Add the kernel of the virtual environment in the Jupyter Notebook:
+    ipython kernel install --user --name=.fervi-venv
+
+14. Run the Jupyter Notebook:
+    jupyter notebook
+
+15. Select the .fervi-venv kernel to run the Jupyter Notebook.
+
+16. Run Flask app:
+    python app.py
