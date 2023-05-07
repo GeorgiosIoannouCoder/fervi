@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+  <title>Classified Image | FERVI</title>
+</head>
+
+<body>
+  <select id="selectbox" name="dropdown" onchange="redirectToPage()" style="text-align: center;">
+    <option value="">Please select an option</option>
+    {% for option in options %}
+    <option value="{{ option }}">{{ option }}</option>
+    {% endfor %}
+  </select>
+
+  <h1>Facial Expression Recognition on Video and Image</h1>
+
+  {% if emotions|length == 0 %}
+  <h3>NO HUMAN FACE DETECTED!</h3>
+  <img src="{{ url_for('static', filename='uploads/classified-image.png') }}" alt="Classified Image"
+    style="height: 70%; width: 70%; display: block; margin: 0 auto; border: 0.1rem solid #000000;">
+  {% else %}
+  <h2>Classified Image</h2>
+  <img src="{{ url_for('static', filename='uploads/classified-image.png') }}" alt="Classified Image"
+    style="height: 70%; width: 70%; display: block; margin: 0 auto; border: 0.1rem solid #000000;">
+  <h2>Detected Emotions:</h2>
+  <ul>
+    {% for id, emotion, emotion_emoji in emotions %}
+    <li>Person {{id}}: {{ emotion }} {{ emotion_emoji }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <button onclick="goBack()" id="btn-back">
+    Go Back
+  </button>
+
+  <script>
+    function goBack() {
+      window.location.href = "/image";
+    }
+  </script>
+
+  <script src="{{ url_for('static',filename='js/redirect.js') }}"></script>
+</body>
+
+</html>

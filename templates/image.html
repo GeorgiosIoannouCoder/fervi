@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+  <title>Image | FERVI</title>
+</head>
+
+<body>
+  <select id="selectbox" name="dropdown" onchange="redirectToPage()" style="text-align: center;">
+    <option value="">Please select an option</option>
+    {% for option in options %}
+    <option value="{{ option }}">{{ option }}</option>
+    {% endfor %}
+  </select>
+
+  <h1>Facial Expression Recognition on Video and Image</h1>
+
+  <h2>Selected Option: Image</h2>
+
+  <p>
+    <b>
+      Please upload an image to detect the facial expression! <br>
+      The image can include more than one face!
+    </b>
+  </p>
+
+  <form method="POST" action="/classified-image" enctype="multipart/form-data">
+    <br>
+    <p>Upload an image file: <input type="radio" name="source" value="local" checked
+        onclick="showFileInput(); enableClassifyButton();">
+      <input type="file" name="image-file" id="fileInput" onchange="enableClassifyButton()">
+    </p><br>
+
+    <p>Upload an image URL: <input type="radio" name="source" value="url"
+        onclick="showURLInput(); enableClassifyButton();">
+      <input type="text" name="image-url" id="urlInput"
+        value="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/abraham-lincoln-portrait-1863-colorized-war-is-hell-store.jpg"
+        style="display:none;" oninput="enableClassifyButton()">
+    </p><br>
+
+    <p><input type="submit" value="Classify" id="btn-classify" disabled></p>
+  </form>
+
+  <script src="{{ url_for('static',filename='js/redirect.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/image.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+  <title>Single Person Real Time Video | FERVI</title>
+</head>
+
+<body>
+  <select id="selectbox" name="dropdown" onchange="redirectToPage()" style="text-align: center;">
+    <option value="">Please select an option</option>
+    {% for option in options %}
+    <option value="{{ option }}">{{ option }}</option>
+    {% endfor %}
+  </select>
+
+  <h1>Facial Expression Recognition on Video and Image</h1>
+
+  <h2>Selected Option: Single Person Real Time Video</h2>
+
+  <p>
+    <b>
+      Generate charts with your facial expressions!
+    </b>
+  </p>
+
+  <video id="video-chart" autoplay controls muted></video>
+
+  <div id="canvas-container" style="width: 70%; margin-left: 3rem;">
+    <canvas id="canvas" width="640" height="480" style="display: block; margin: 0 auto;"></canvas>
+  </div>
+
+  <iframe src="{{ url_for('charts_side') }}" frameborder="0" style="width: 100%;"></iframe>
+
+  <button onclick="resetCounts()" id="btn-reset-charts">
+    Reset Charts
+  </button>
+
+  <script src="{{ url_for('static',filename='js/single_person_real_time_video.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/redirect.js') }}"></script>
+</body>
+
+</html>

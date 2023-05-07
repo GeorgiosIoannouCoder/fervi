@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
+  <title>Home | FERVI</title>
+</head>
+
+<body>
+  <select id="selectbox" name="dropdown" onchange="redirectToPage()" style="text-align: center;">
+    <option value="">Please select an option</option>
+    {% for option in options %}
+    <option value="{{ option }}">{{ option }}</option>
+    {% endfor %}
+  </select>
+
+  <h1>Facial Expression Recognition on Video and Image</h1>
+  <h1>FERVI</h1>
+
+  <div class="image-container">
+    <img src="static\images\landmarks.png" alt="An image with facial landmakrs" class="resize">
+  </div>
+
+  <p>
+    Please select an option from the drop-down menu on the top left!
+  </p>
+
+  <p>
+    <b>
+      Check out the
+      <u><a href="https://github.com/GeorgiosIoannouCoder/fervi" style="color: #FAF9F6;">
+          GitHub repository
+        </a></u>
+    </b>
+  </p>
+
+  <script src="{{ url_for('static',filename='js/redirect.js') }}"></script>
+</body>
+
+</html>
