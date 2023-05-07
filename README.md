@@ -77,6 +77,9 @@ An emotion classification project which takes image files captured from human fa
 
 You can check the Jupyter Notebook for all the workings of the model [here](https://nbviewer.org/github/GeorgiosIoannouCoder/fervi/blob/main/fervi-notebook.ipynb).
 
+## SETUP INSTRUCTIONS
+
+You can view all the setup instructions depening on your operating system in the setup folder [here](https://github.com/GeorgiosIoannouCoder/fervi/tree/main/setup).
 
 ## CONTRIBUTION AND FEEDBACK
 
