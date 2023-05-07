@@ -1,0 +1,234 @@
+body {
+    background-color: #0e1117;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    color: #FAF9F6;
+    font-size: 2.2rem;
+}
+
+h2 {
+    text-align: center;
+    font-family: monospace;
+    color: #dfd9c6;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: monospace;
+    color: #ff0000;
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: monospace;
+    color: #FAF9F6;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+ul {
+    font-family: monospace;
+    color: #FAF9F6;
+    font-size: 1.1rem;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.resize {
+    width: 15rem;
+    height: 20rem;
+}
+
+.resize4xx {
+    width: 50%;
+    height: 50%;
+}
+
+.resize5xx {
+    width: 50%;
+    height: 50%;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+}
+
+#btn-reset-charts {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-color: #0e1117;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+    margin-bottom: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #0e1117, 0.3rem 0.3rem 0.3rem 0.3rem #FAF9F6;
+}
+
+#btn-classify {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-color: #0e1117;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+    margin-bottom: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #0e1117, 0.3rem 0.3rem 0.3rem 0.3rem #FAF9F6;
+}
+
+#btn-back {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-color: #0e1117;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+    margin-bottom: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #0e1117, 0.3rem 0.3rem 0.3rem 0.3rem #FAF9F6;
+}
+
+#btn-capture {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-color: #0e1117;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+    margin-bottom: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #0e1117, 0.3rem 0.3rem 0.3rem 0.3rem #FAF9F6;
+}
+
+#fileInput {
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-color: #0e1117;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+    margin-bottom: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #0e1117, 0.3rem 0.3rem 0.3rem 0.3rem #FAF9F6;
+}
+
+#urlInput {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-color: #0e1117;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+    margin-bottom: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #0e1117, 0.3rem 0.3rem 0.3rem 0.3rem #FAF9F6;
+}
+
+iframe {
+    padding-top: 0;
+    margin-top: 0;
+    width: 40rem;
+    height: 30rem;
+}
+
+#chart_wrap {
+    position: relative;
+}
+
+#canvas,
+iframe {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#selectbox {
+    padding: 0.5rem;
+    border-color: #0e1117;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+    margin-bottom: 20px;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #0e1117, 0.3rem 0.3rem 0.3rem 0.3rem #FAF9F6;
+}
+
+#selectbox option {
+    font-size: 0.9rem;
+    background-color: #FAF9F6;
+    color: #0e1117;
+    font-family: monospace;
+}
+
+#pie-chart {
+    width: 100%;
+    height: 17rem;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+#column-chart {
+    width: 100%;
+    height: 12rem;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#video-acting {
+    width: 45%;
+}
+
+#canvas-acting {
+    height: 0rem;
+    width: 0rem;
+}
+
+#video-chart {
+    height: 0rem;
+    width: 0rem;
+}
+
+#canvas-chart {
+    display: block;
+    margin: 0 auto;
+}
+
+#processed-image {
+    width: 45%;
+}
