@@ -57,14 +57,15 @@ An emotion classification project which takes image files captured from human fa
 7. [Plotly](https://plotly.com/)
 8. [Matplotlib](https://matplotlib.org/)
 9. [Seaborn](https://seaborn.pydata.org/)
-10. [OpenCV](https://opencv.org/)
-10. [Flask](https://flask.palletsprojects.com/en/2.3.x/)
-11. [Heroku](https://www.heroku.com/)
+10. [Jupyter Notebook](https://jupyter.org/)
+11. [OpenCV](https://opencv.org/)
 12. [Python](https://www.python.org/)
-13. [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-14. [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-15. [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-16. [Kaggle](https://www.kaggle.com/)
+13. [Flask](https://flask.palletsprojects.com/en/2.3.x/)
+14. [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+15. [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+16. [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+17. [Heroku](https://www.heroku.com/)
+18. [Kaggle](https://www.kaggle.com/)
 
 ## UI
 
