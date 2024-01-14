@@ -12,7 +12,7 @@
    </a>
 </p>
 
-An emotion classification project which takes image files captured from human face and predicts the emotion conveyed from the facial expression. Please visit the application [here](https://fervi.herokuapp.com/) to explore the project and its capabilities including real-time video emotion classification.
+An emotion classification project which takes image files captured from human face and predicts the emotion conveyed from the facial expression. Please visit the application [here](https://fervi.herokuapp.com/) to explore the project and its capabilities including real-time video emotion classification and real-time graphs.
 
 ## DATASETS USED
 
